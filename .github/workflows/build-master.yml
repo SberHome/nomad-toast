@@ -43,7 +43,7 @@ jobs:
         with:
           context: .
           tags: nexus.iot.sberdevices.ru/${{ steps.string.outputs.lowercase }}:${{ steps.describe.outputs.version }}
-          file: build/docker/Dockerfile
+          file: Dockerfile
 
       - name: Push
         id: push
