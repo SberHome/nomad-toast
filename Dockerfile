@@ -10,7 +10,7 @@ ADD . /go/src/github.com/jrasell/nomad-toast
 WORKDIR /go/src/github.com/jrasell/nomad-toast/
 
 # RUN go test -mod vendor  -v ./...
-RUN govvv build -o /bin/nomad-toast /go/src/github.com/jrasell/nomad-toast/cmd/nomad-toast -version local -pkg "github.com/jrasell/nomad-toast/pkg/buildconsts"
+RUN go build -o /bin/nomad-toast /go/src/github.com/jrasell/nomad-toast/cmd/nomad-toast
 
 
 FROM alpine:3.10
