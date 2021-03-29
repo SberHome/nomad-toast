@@ -1,0 +1,146 @@
+# github.com/armon/go-metrics v0.0.0-20180917152333-f0300d1749da
+## explicit
+github.com/armon/go-metrics
+# github.com/fsnotify/fsnotify v1.4.7
+## explicit
+github.com/fsnotify/fsnotify
+# github.com/gorhill/cronexpr v0.0.0-20140423231348-a557574d6c02
+## explicit
+github.com/gorhill/cronexpr
+# github.com/gorilla/websocket v1.4.0
+## explicit
+github.com/gorilla/websocket
+# github.com/hashicorp/consul v1.0.7
+## explicit
+github.com/hashicorp/consul/api
+# github.com/hashicorp/errwrap v1.0.0
+## explicit
+github.com/hashicorp/errwrap
+# github.com/hashicorp/go-cleanhttp v0.0.0-20170211003301-a45970658e51
+## explicit
+github.com/hashicorp/go-cleanhttp
+# github.com/hashicorp/go-immutable-radix v0.0.0-20170725221215-8aac27015308
+## explicit
+github.com/hashicorp/go-immutable-radix
+# github.com/hashicorp/go-msgpack v0.0.0-20150518234257-fa3f63826f7c
+## explicit
+github.com/hashicorp/go-msgpack/codec
+# github.com/hashicorp/go-multierror v0.0.0-20150916205742-d30f09973e19
+## explicit
+github.com/hashicorp/go-multierror
+# github.com/hashicorp/go-rootcerts v0.0.0-20160503143440-6bb64b370b90
+## explicit
+github.com/hashicorp/go-rootcerts
+# github.com/hashicorp/go-version v0.0.0-20170202080759-03c5bf6be031
+## explicit
+github.com/hashicorp/go-version
+# github.com/hashicorp/golang-lru v0.0.0-20160207214719-a0d98a5f2880
+## explicit
+github.com/hashicorp/golang-lru
+github.com/hashicorp/golang-lru/simplelru
+# github.com/hashicorp/hcl v1.0.0
+github.com/hashicorp/hcl
+github.com/hashicorp/hcl/hcl/ast
+github.com/hashicorp/hcl/hcl/parser
+github.com/hashicorp/hcl/hcl/printer
+github.com/hashicorp/hcl/hcl/scanner
+github.com/hashicorp/hcl/hcl/strconv
+github.com/hashicorp/hcl/hcl/token
+github.com/hashicorp/hcl/json/parser
+github.com/hashicorp/hcl/json/scanner
+github.com/hashicorp/hcl/json/token
+# github.com/hashicorp/nomad v0.8.6
+## explicit
+github.com/hashicorp/nomad/acl
+github.com/hashicorp/nomad/api
+github.com/hashicorp/nomad/api/contexts
+github.com/hashicorp/nomad/helper
+github.com/hashicorp/nomad/helper/args
+github.com/hashicorp/nomad/helper/flatmap
+github.com/hashicorp/nomad/helper/uuid
+github.com/hashicorp/nomad/nomad/structs
+# github.com/hashicorp/raft v1.0.1-0.20180117202925-077966dbc90f
+## explicit
+github.com/hashicorp/raft
+# github.com/hashicorp/serf v0.8.2-0.20180119224300-b6017ae61f44
+## explicit
+github.com/hashicorp/serf/coordinate
+# github.com/inconshreveable/mousetrap v1.0.0
+## explicit
+github.com/inconshreveable/mousetrap
+# github.com/magiconair/properties v1.8.0
+## explicit
+github.com/magiconair/properties
+# github.com/mattn/go-isatty v0.0.4
+## explicit
+github.com/mattn/go-isatty
+# github.com/mitchellh/copystructure v0.0.0-20170525013902-d23ffcb85de3
+## explicit
+github.com/mitchellh/copystructure
+# github.com/mitchellh/go-homedir v1.0.0
+## explicit
+github.com/mitchellh/go-homedir
+# github.com/mitchellh/hashstructure v0.0.0-20160118175604-1ef5c71b025a
+## explicit
+github.com/mitchellh/hashstructure
+# github.com/mitchellh/mapstructure v1.1.2
+## explicit
+github.com/mitchellh/mapstructure
+# github.com/mitchellh/reflectwalk v1.0.0
+## explicit
+github.com/mitchellh/reflectwalk
+# github.com/nlopes/slack v0.4.0
+## explicit
+github.com/nlopes/slack
+github.com/nlopes/slack/slackutilsx
+# github.com/pelletier/go-toml v1.2.0
+## explicit
+github.com/pelletier/go-toml
+# github.com/pkg/errors v0.8.0
+## explicit
+github.com/pkg/errors
+# github.com/rs/zerolog v1.9.1
+## explicit
+github.com/rs/zerolog
+github.com/rs/zerolog/internal/cbor
+github.com/rs/zerolog/internal/json
+github.com/rs/zerolog/log
+# github.com/sean-/sysexits v0.0.0-20171026162210-598690305aaa
+## explicit
+github.com/sean-/sysexits
+# github.com/spf13/afero v1.1.2
+## explicit
+github.com/spf13/afero
+github.com/spf13/afero/mem
+# github.com/spf13/cast v1.2.0
+## explicit
+github.com/spf13/cast
+# github.com/spf13/cobra v0.0.3
+## explicit
+github.com/spf13/cobra
+# github.com/spf13/jwalterweatherman v1.0.0
+## explicit
+github.com/spf13/jwalterweatherman
+# github.com/spf13/pflag v1.0.3
+## explicit
+github.com/spf13/pflag
+# github.com/spf13/viper v1.2.1
+## explicit
+github.com/spf13/viper
+# github.com/ugorji/go v0.0.0-20170620060102-0053ebfd9d0e
+## explicit
+github.com/ugorji/go/codec
+# golang.org/x/crypto v0.0.0-20181024171144-74cb1d3d52f4
+## explicit
+golang.org/x/crypto/blake2b
+# golang.org/x/sys v0.0.0-20181024145615-5cd93ef61a7c
+## explicit
+golang.org/x/sys/cpu
+golang.org/x/sys/unix
+# golang.org/x/text v0.3.0
+## explicit
+golang.org/x/text/transform
+golang.org/x/text/unicode/norm
+# gopkg.in/yaml.v2 v2.2.1
+## explicit
+gopkg.in/yaml.v2

@@ -36,7 +36,7 @@ func (n *Notifier) formatDeploymentMessage(d *api.Deployment) {
 	m.Title = fmt.Sprintf("Nomad Deployment Notification: %s", strings.ToUpper(n.nomadRegion))
 
 	if n.config.ui.HashiUIEnabled {
-		m.TitleLink = fmt.Sprintf("%s/nomad/%s/deployments/%s/info", n.config.ui.HashiUIHost, n.nomadRegion, d.ID)
+		m.TitleLink = fmt.Sprintf("%s/ui/jobs/%s/deployments", n.config.ui.HashiUIHost, d.JobID)
 	}
 
 	switch d.Status {
@@ -79,7 +79,7 @@ func (n *Notifier) formatAllocationMessage(d *api.AllocationListStub) {
 	m.Title = fmt.Sprintf("Nomad Allocation Notification: %s", strings.ToUpper(n.nomadRegion))
 
 	if n.config.ui.HashiUIEnabled {
-		m.TitleLink = fmt.Sprintf("%s/nomad/%s/allocations/%s/info", n.config.ui.HashiUIHost, n.nomadRegion, d.ID)
+		m.TitleLink = fmt.Sprintf("%s/ui/allocations/%s", n.config.ui.HashiUIHost, d.ID)
 	}
 
 	switch d.ClientStatus {

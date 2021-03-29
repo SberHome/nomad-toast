@@ -1,21 +1,23 @@
-FROM alpine:latest
+FROM golang:1.14-stretch AS builder
 
-LABEL maintainer James Rasell<(jamesrasell@gmail.com)> (@jrasell)
-LABEL vendor "jrasell"
+ENV CGO_ENABLED=0
+ENV GOOS=linux
+ENV GO111MODULE=on
 
-ENV NOMAD_TOAST_VERSION v0.0.1-rc1
+RUN mkdir -p /go/src/github.com/jrasell/nomad-toast
+ADD . /go/src/github.com/jrasell/nomad-toast
 
-WORKDIR /usr/bin/
+WORKDIR /go/src/github.com/jrasell/nomad-toast/
 
-RUN buildDeps=' \
-                bash \
-                wget \
-        ' \
-        set -x \
-        && apk --no-cache add $buildDeps ca-certificates \
-        && wget -O nomad-toast https://github.com/jrasell/nomad-toast/releases/download/${NOMAD_TOAST_VERSION}/nomad-toast_linux_amd64 \
-        && chmod +x /usr/bin/nomad-toast \
-        && apk del $buildDeps \
-        && echo "Build complete."
+# RUN go test -mod vendor  -v ./...
+RUN go build -o /bin/nomad-toast ./cmd/nomad-toast -version local -pkg "github.com/jrasell/nomad-toast/pkg/buildconsts"
+
+
+FROM alpine:3.10
+
+RUN apk --no-cache add ca-certificates
+
+WORKDIR /bin
+COPY --from=builder /bin/nomad-toast  /bin/nomad-toast
 
 CMD ["nomad-toast", "--help"]
